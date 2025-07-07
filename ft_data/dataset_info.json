@@ -1,0 +1,26 @@
+{
+    "bam_train_data": {
+        "file_name": "bam_train_data.json",
+        "columns": {
+            "prompt": "instruction",
+            "response": "output",
+            "system": "system"
+        }
+    },
+    "sam_train_data": {
+        "file_name": "sam_train_data.json",
+        "columns": {
+            "prompt": "instruction",
+            "response": "output",
+            "system": "system"
+        }
+    },
+    "lom_train_data": {
+        "file_name": "lom_train_data.json",
+        "columns": {
+            "prompt": "instruction",
+            "response": "output",
+            "system": "system"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{   
+    "bird_train_db_dir": "data/bird/train/train_databases",
+    "bird_train_baseline": "data/bird/train/baseline_sql.json",
+    "bird_train_column_meaning": "data/bird/train/column_meaning.json",
+    "bird_train_tables": "data/bird/train/train_tables.json",
+    "bird_train_data": "data/bird/train/train.json",
+    "spider_db_dir": "data/spider/database",
+    "spider_train_column_meaning": "data/spider/train_column_meaning.json",
+    "spider_tables": "data/spider/tables.json",
+    "spider_train_data": "data/spider/train_spider.json",
+    "ft_data_dir": "ft_data",
+    "dev_db_dir": "data/bird/dev/dev_databases",
+    "dev_column_meaning": "data/bird/dev/column_meaning.json",
+    "dev_tables": "data/bird/dev/dev_tables.json",
+    "dev_data": "data/bird/dev/dev.json"
+}
