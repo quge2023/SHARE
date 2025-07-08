@@ -122,14 +122,11 @@ We follow the official evaluation methods proposed by the [BIRD](https://github.
 Please cite the repo if you think our work is helpful to you.
 
 ```text
-@misc{qu2025shareslmbasedhierarchicalaction,
-      title={SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL}, 
-      author={Ge Qu and Jinyang Li and Bowen Qin and Xiaolong Li and Nan Huo and Chenhao Ma and Reynold Cheng},
-      year={2025},
-      eprint={2506.00391},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2506.00391}, 
+@article{qu2025share,
+  title={SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL},
+  author={Qu, Ge and Li, Jinyang and Qin, Bowen and Li, Xiaolong and Huo, Nan and Ma, Chenhao and Cheng, Reynold},
+  journal={arXiv preprint arXiv:2506.00391},
+  year={2025}
 }
 ```
 
