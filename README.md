@@ -54,7 +54,7 @@ For the expected file structure under each dataset directory, please refer to: `
 
 ## ✨ Infer Results
 
-To directly use the fine-tuned models in SHARE for inference, you can either load them via their model cards from [Models on HuggingFace](https://huggingface.co/gq2138/models), or download the models and place them in the `./model/` directory for local loading.
+To directly use the fine-tuned models in SHARE for inference, you can either load them via their model cards from [Models on HuggingFace](https://huggingface.co/birdsql/models), or download the models and place them in the `./model/` directory for local loading.
 
 You could then execute the command line by following the instruction (You may need to adjust paths and parameters with your preference.):
 ```
@@ -64,7 +64,7 @@ $ sh ./scripts/run_inference.sh
 In this script, as described in Section 3.5, we execute the SHARE workflow to generate refined action trajectories for each instance. These refined trajectories then serve as self-correction signals, enabling the language model to regenerate more accurate and contextually appropriate SQL queries. Outputs during inference are stored in `./outputs/infer/`. 
 
 ## ✨ Train From Scratch
-To train the three models used in SHARE from scratch, you could either use the corresponding processed training data available on [HuggingFace Datasets](https://huggingface.co/gq2138/datasets), or generate the training data locally by running the provided data processing scripts. For example, to generate the training data for the BAM module, run:
+To train the three models used in SHARE from scratch, you could either use the corresponding processed training data available on [HuggingFace Datasets](https://huggingface.co/birdsql/datasets), or generate the training data locally by running the provided data processing scripts. For example, to generate the training data for the BAM module, run:
 ```
 $ sh ./scripts/get_bam_data.sh
 ```
