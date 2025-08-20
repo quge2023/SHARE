@@ -90,7 +90,15 @@ class BaseModel():
 
         llm = LLM(
         model=self.model_path,
-        tensor_parallel_size=4,
+        tensor_parallel_size=(
+            max(
+                1,
+                min(
+                    int(os.getenv("TP_SIZE", "1")),
+                    torch.cuda.device_count() if torch.cuda.is_available() else 1,
+                ),
+            )
+        ),
         trust_remote_code=True,
         gpu_memory_utilization=0.95,
         max_model_len=max_token_length,
