@@ -75,9 +75,6 @@ def run_inference(bam, sam, lom, output_dir):
     final_traj_save_path = os.path.join(output_dir, 'final_traj.jsonl')
     final_traj = lom.modify_traj(augmented_schema, intermediate_traj_list, save_path = final_traj_save_path)
     print(f"Final trajectory saved to {final_traj_save_path}")
-    
-    final_traj = load_jsonl('/home/qinbowen/just_malou/gq2138/share/outputs/infer/final_traj.jsonl')
-    augmented_schema = json.load(open('/home/qinbowen/just_malou/gq2138/share/outputs/infer/augmented_schema.json', 'r'))
     prompt_list = []
     for idx, info in enumerate(bam.data_json):
         aug_schema = augmented_schema[str(idx)]
